@@ -7,7 +7,8 @@ import AddFriend from "./AddFriend";
 function App(){
   var appStyles = {
     display:"flex",
-    justifyContent:"space-between"
+    justifyContent:"space-between",
+    
   }
   return (
     <div>

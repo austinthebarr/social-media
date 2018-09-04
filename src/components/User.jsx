@@ -12,7 +12,8 @@ function User(props){
 
   var hisatosBorder = {
     border:"2px solid grey",
-    maxWidth:"25%"
+    maxWidth:"25%",
+    height: "25%"
   }
 
   return (
