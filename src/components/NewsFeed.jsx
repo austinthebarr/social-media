@@ -1,18 +1,41 @@
 import React from 'react';
 import Tweets from './Tweets';
+const tweetList = [ 
+  {
+    name: 'Steven Tran',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    name: 'Jon Lemon',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    name: 'Yoko Bono',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    name: 'E-40',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    name: 'J-Cole',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  },
+  {
+    name: 'Derek',
+    tweet: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+  }
+];
 
 function NewsFeed(){
   return (
     <div>
-      <Tweets
-        name="austin"
-        tweet="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-      <Tweets
-        name="Hisato"
-        tweet="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
-      <Tweets
-        name="honeyBOOBOO"
-        tweet="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."/>
+      {tweetList.map((tweet, index)=>
+        <Tweets
+          name={tweet.name}
+          tweet={tweet.tweet} 
+          key={index}/>
+      )}
     </div>
   );
 }

@@ -18,8 +18,11 @@ function App() {
       <div style={appStyles}>
         <Switch>
           <Route path="/hisato" 
-            component={User}
-            name="Hisato Tokyo" />
+            render={() => <User name={'Hisato'} /> }
+          />
+          <Route path='/austin'
+            render={() => <User name={'Austin'} />}
+          />  
         </Switch>
         <NewsFeed style />
         <AddFriend />

@@ -8,7 +8,7 @@ function SearchBar(){
   return (
     <div style={searchBarStyle}>
       <form>
-        <input value="Search"/>
+        <input type='text'/>
         <button>Tweet</button>
       </form>
     </div>
