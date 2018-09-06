@@ -1,20 +1,20 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Avatar from "./Avatar";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Avatar from './Avatar';
 
 function User(props){
   var userStyles = {
-    listStyle:"none",
-    display:"flex",
-    justifyContent:"space-between",
-    marginLeft:"-25px"
-  }
+    listStyle:'none',
+    display:'flex',
+    justifyContent:'space-between',
+    marginLeft:'-25px'
+  };
 
   var hisatosBorder = {
-    border:"2px solid grey",
-    maxWidth:"25%",
-    height: "25%"
-  }
+    border:'2px solid grey',
+    maxWidth:'25%',
+    height: '25%'
+  };
 
   return (
     <div style={hisatosBorder}>
@@ -29,7 +29,7 @@ function User(props){
   );
 }
 User.propTypes = {
- name: PropTypes.string.isRequired
+  name: PropTypes.string.isRequired
 };
 
 export default User;

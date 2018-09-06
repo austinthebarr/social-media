@@ -1,24 +1,28 @@
-import React from "react";
-import Nav from "./Nav";
-import User from "./User";
-import NewsFeed from "./NewsFeed";
-import AddFriend from "./AddFriend";
+import React from 'react';
+import Nav from './Nav';
+import { Switch, Route } from 'react-router-dom';
 
-function App(){
+import User from './User';
+import NewsFeed from './NewsFeed';
+import AddFriend from './AddFriend';
+
+function App() {
   var appStyles = {
-    display:"flex",
-    justifyContent:"space-between",
-    
-  }
+    display: 'flex',
+    justifyContent: 'space-between',
+
+  };
   return (
     <div>
-      <Nav/>
-      <div style ={appStyles}>
-
-        <User
-          name="Hisato Tokyo"/>
-        <NewsFeed style/>
-        <AddFriend/>
+      <Nav />
+      <div style={appStyles}>
+        <Switch>
+          <Route path="/hisato" 
+            component={User}
+            name="Hisato Tokyo" />
+        </Switch>
+        <NewsFeed style />
+        <AddFriend />
       </div>
     </div>
   );

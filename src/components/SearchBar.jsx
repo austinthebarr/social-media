@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react';
 
 function SearchBar(){
   var searchBarStyle = {
     float: 'right',
     
-  }
+  };
   return (
     <div style={searchBarStyle}>
       <form>
-      <input value="Search"/>
-      <button>Tweet</button>
+        <input value="Search"/>
+        <button>Tweet</button>
       </form>
     </div>
 

@@ -1,5 +1,5 @@
-import React from "react";
-import Tweets from "./Tweets";
+import React from 'react';
+import Tweets from './Tweets';
 
 function NewsFeed(){
   return (

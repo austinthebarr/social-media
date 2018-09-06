@@ -1,6 +1,6 @@
-import React from "react";
-import PropTypes from "prop-types";
-import Avatar from "./Avatar";
+import React from 'react';
+import PropTypes from 'prop-types';
+import Avatar from './Avatar';
 
 
 function Friend(props) {
@@ -17,5 +17,5 @@ function Friend(props) {
 Friend.propTypes = {
   name: PropTypes.string.isRequired
 
-}
+};
 export default Friend;
